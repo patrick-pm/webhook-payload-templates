@@ -1,4 +1,4 @@
-# LogicMonitor Webhook Payload Template
+# Cisco Meraki Webhook Payload Template for LogicMonitor
 
 This template enables Cisco Meraki webhooks to integrate with [LogicMonitor](https://www.logicmonitor.com) by forwarding events in a format LogicMonitor can ingest.
 
