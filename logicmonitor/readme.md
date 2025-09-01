@@ -12,13 +12,18 @@ This template enables Cisco Meraki webhooks to integrate with [LogicMonitor](htt
    - Click **New Template** and paste the contents of `body.liquid` and `headers.liquid`.
 2. Assign the webhook template to your alert destinations.
 
+## Example Header
+```json
+{
+  "Authorization": "Bearer {{sharedSecret}}"
+}
+```
 
 ## Example Body
 ```json
-
 {
-"Cisco Meraki": "{{ alertType }} alert in {{ networkName }} ({{ organizationName }}) for device {{ deviceName }}",
-"alert_data": {{ alertData | jsonify }},
+  "Cisco Meraki": "{{ alertType }} alert in {{ networkName }} ({{ organizationName }}) for device {{ deviceName }}",
+  "alert_data": {{ alertData | jsonify }},
   "log_level": "{{ alertLevel }}",
   "timestamp": "{{ occurredAt }}",
   "sentAt": "{{ sentAt }}",
@@ -40,3 +45,4 @@ This template enables Cisco Meraki webhooks to integrate with [LogicMonitor](htt
   "alertTypeId": "{{ alertTypeId }}",
   "alertData": {{ alertData | jsonify }}
 }
+```
