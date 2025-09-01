@@ -9,6 +9,8 @@ This template enables Cisco Meraki webhooks to integrate with [LogicMonitor](htt
 ## Files
 - `body.liquid` – Defines the JSON body of the webhook payload.
 - `headers.liquid` – Defines any custom headers required by the LogicMonitor ingest endpoint.
+- `Cisco Meraki Webhooks.json` - example Webhook LogSource (also available via LogicMonitor Module Exchange)
+- `Cisco Meraki Webhooks for Services.json` - example Webhook LogSource (also available via LogicMonitor Module Exchange)
 
 ## Usage
 1. Install the Cisco Meraki Webhook LogSources
