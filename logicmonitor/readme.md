@@ -15,10 +15,26 @@ This template enables Cisco Meraki webhooks to integrate with [LogicMonitor](htt
 ## Example Payload
 ```json
 {
-  "alertId": "{{alertId}}",
-  "networkId": "{{networkId}}",
-  "organizationId": "{{organizationId}}",
-  "severity": "{{severity}}",
-  "alertType": "{{alertType}}",
-  "timestamp": "{{occurredAt}}"
+"Cisco Meraki": "{{ alertType }} alert in {{ networkName }} ({{ organizationName }}) for device {{ deviceName }}",
+"alert_data": {{ alertData | jsonify }},
+  "log_level": "{{ alertLevel }}",
+  "timestamp": "{{ occurredAt }}",
+  "sentAt": "{{ sentAt }}",
+  "organizationName": "{{ organizationName }}",
+  "organizationId": "{{ organizationId }}",
+  "organizationUrl": "{{ organizationUrl }}",
+  "networkName": "{{ networkName }}",
+  "networkId": "{{ networkId }}",
+  "networkUrl": "{{ networkUrl }}",
+  "networkTags": {{ networkTags | jsonify }},
+  "deviceName": "{{ deviceName }}",
+  "deviceModel": "{{ deviceModel }}",
+  "deviceSerial": "{{ deviceSerial }}",
+  "deviceMac": "{{ deviceMac }}",
+  "deviceUrl": "{{ deviceUrl }}",
+  "deviceTags": {{ deviceTags | jsonify }},
+  "alertId": "{{ alertId }}",
+  "alertType": "{{ alertType }}",
+  "alertTypeId": "{{ alertTypeId }}",
+  "alertData": {{ alertData | jsonify }}
 }
