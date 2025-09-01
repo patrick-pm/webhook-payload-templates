@@ -12,7 +12,7 @@ This template enables Cisco Meraki webhooks to integrate with [LogicMonitor](htt
 
 ## Usage
 1. Install the Cisco Meraki Webhook LogSources
-    - Go to **LogicMonitor → Settings → LogicModules → Exchange -> LogSources -> Cisco Meraki Webhooks**. This maps device-based alerts to the relevant Cisco Meraki devices.
+    - Go to **LogicMonitor → Settings → LogicModules → Exchange -> LogSources -> Cisco Meraki Webhooks**. This maps device-based alerts to the relevant devices based on matching Cisco Meraki serial number.
     - Go to **LogicMonitor → Settings → LogicModules → Exchange -> LogSources -> Cisco Meraki Webhooks for Services** This maps Cisco Meraki Dashboard configuration changes to LogicMonitor Services with the Network ID set as a host property of meraki.api.network.
 2. Generate a Bearer Token from your LogicMonitor Portal
 3. Import the template into the Meraki Dashboard:
