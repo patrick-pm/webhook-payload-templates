@@ -16,15 +16,15 @@ This template enables Cisco Meraki webhooks to integrate with [LogicMonitor](htt
 1. Install the Cisco Meraki Webhook LogSources
     - Go to **LogicMonitor → Settings → LogicModules → Exchange -> LogSources -> Cisco Meraki Webhooks**. This maps device-based alerts to the relevant devices based on matching Cisco Meraki serial number.
     - Go to **LogicMonitor → Settings → LogicModules → Exchange -> LogSources -> Cisco Meraki Webhooks for Services** This maps Cisco Meraki Dashboard configuration changes to LogicMonitor Services with the Network ID set as a host property of meraki.api.network.
-2. Generate a Bearer Token from your LogicMonitor Portal
-3. Import the template into the Meraki Dashboard:
-   - Go to **Organization → Settings → Webhooks → Payload Templates**.
-   - Click **New Template** and paste the contents of `body.liquid` and `headers.liquid`.
+2. Generate a Bearer Token from your LogicMonitor Portal -> https://www.logicmonitor.com/support/adding-a-bearer-token
+3. Add a new Webhook Template to yiur Cisco Meraki Dashboard:
+   - Go to **Organization → Configure → APIs & Webhooks → Webhooks -> Templates**.
+   - Click **Create Template** and paste the contents of `body.liquid` and `headers.liquid`.
   
 4. Add a new Receiver via
    - Go to **Organization → Settings → Webhooks → Receivers -> Add Receiver**.
    - Give your Receiver a name, like "My LogicMonitor Portal Name + Optional Tenant Name"
-   - Enter your portal webhook reveiver URL, like "https://myportalname.logicmonitor.com/rest/api/v1/webhook/ingest/meraki:
+   - Enter your portal webhook reveiver URL, like https://myportalname.logicmonitor.com/rest/api/v1/webhook/ingest/meraki
    - Paste your LogicMonitor Bearer Token into the "Shared Secret Field"
    - Select your LogicMonitor Payload Template and Save.
   
