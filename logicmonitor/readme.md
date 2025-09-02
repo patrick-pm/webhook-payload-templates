@@ -1,6 +1,6 @@
 # Cisco Meraki Webhook Payload Template for LogicMonitor
 
-This template enables Cisco Meraki webhooks to integrate with [LogicMonitor](https://www.logicmonitor.com) LM Logs.
+This Webhook Payload Template facilitates sending Cisco Meraki Dashboard Alerts directly and securely to [LogicMonitor](https://www.logicmonitor.com) LM Logs.
 
 <img src="logicmonitor-meraki-webhooks.png" alt="image_tooltip" width="1024" />
 
@@ -27,6 +27,10 @@ This template enables Cisco Meraki webhooks to integrate with [LogicMonitor](htt
    - Enter your portal webhook reveiver URL, like https://myportalname.logicmonitor.com/rest/api/v1/webhook/ingest/meraki
    - Paste your LogicMonitor Bearer Token into the "Shared Secret Field"
    - Select your LogicMonitor Payload Template and Save.
+  
+<img src="meraki-webhook-receivers.png" alt="image_tooltip" width="1024" />
+
+<hr>
   
 5. Add this Receiver to the desired Meraki Networks via
  - Go to **Organization → Network Name → Network Wide → Alerts**.
