@@ -8,8 +8,9 @@
 </picture>
 
 
+## Preview
 
-
+<img src="logicmonitor-meraki-webhooks.png" alt="image_tooltip" width="1024" /> 
 
 ## Files
 - `body.liquid` – Defines the JSON body of the webhook payload.
@@ -34,8 +35,6 @@
    - Select your LogicMonitor Payload Template and Save.
   
 <img src="meraki-webhook-receivers.png" alt="image_tooltip" width="1024" />
-
-<hr>
   
 5. Add this Receiver to the desired Meraki Networks via
  - Go to **Organization → Network Name → Network Wide → Alerts**.
