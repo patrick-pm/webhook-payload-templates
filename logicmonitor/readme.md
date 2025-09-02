@@ -17,7 +17,7 @@ This Webhook Payload Template facilitates sending Cisco Meraki Dashboard Alerts 
     - Go to **LogicMonitor → Settings → LogicModules → Exchange -> LogSources -> Cisco Meraki Webhooks**. This maps device-based alerts to the relevant devices based on matching Cisco Meraki serial number.
     - Go to **LogicMonitor → Settings → LogicModules → Exchange -> LogSources -> Cisco Meraki Webhooks for Services** This maps Cisco Meraki Dashboard configuration changes to LogicMonitor Services with the Network ID set as a host property of meraki.api.network.
 2. Generate a Bearer Token from your LogicMonitor Portal -> https://www.logicmonitor.com/support/adding-a-bearer-token
-3. Add a new Webhook Template to yiur Cisco Meraki Dashboard:
+3. Add a new Webhook Template to your Cisco Meraki Dashboard:
    - Go to **Organization → Configure → APIs & Webhooks → Webhooks -> Templates**.
    - Click **Create Template** and paste the contents of `body.liquid` and `headers.liquid`.
   
