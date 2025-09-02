@@ -1,15 +1,15 @@
 # Cisco Meraki Webhook Payload Template for LogicMonitor
 
-<img src="LogicMonitor_logo_and_tagline_RBG_Navy.png" alt="image_tooltip" width="512" />
 
-<hr>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="LogicMonitor_logo_and_tagline_RBG_White.png">
+  <source media="(prefers-color-scheme: light)" srcset="LogicMonitor_logo_and_tagline_RBG_Navy.png">
+  <img alt="LogicMonitor Logo" src="LogicMonitor_logo_and_tagline_RBG_Navy.png" width="512">
+</picture>
 
 
-This Webhook Payload Template facilitates sending Cisco Meraki Dashboard Alerts directly and securely to [LogicMonitor](https://www.logicmonitor.com) LM Logs.
 
-<img src="logicmonitor-meraki-webhooks.png" alt="image_tooltip" width="1024" />
 
-<hr>
 
 ## Files
 - `body.liquid` – Defines the JSON body of the webhook payload.
